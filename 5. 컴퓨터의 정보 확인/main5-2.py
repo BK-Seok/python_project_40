@@ -14,7 +14,7 @@ print(f'메모리: {memory_total}GB')
 disk = psutil.disk_partitions()
 for p in disk:
     print(p.mountpoint, p.fstype, end=' ')
-    du = psutil.disk_partitions
+    du = psutil.disk_usage(p.mountpoint)
     disk_total = round(du.total / 1024**3)
     print(f'디스크크기: {disk_total}GB')
 
