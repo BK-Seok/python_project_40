@@ -25,7 +25,7 @@ passwd_string = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 # 1~3까지 반복
 for len in range(1,4):
-    # 문자열 전부를 1~3까지 반복 튜플로 반환
+    # 문자열 전부의 경우의 수를 1~3까지 반복 리스트로 반환
     to_attempt = itertools.product(passwd_string, repeat = len)
     for attempt in to_attempt:
         passwd = ''.join(attempt)   # 리스트 합치기
