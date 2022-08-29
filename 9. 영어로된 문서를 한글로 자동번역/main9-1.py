@@ -1,7 +1,9 @@
-import googletrans 
+import googletrans # 구글 번역기 사용을 위한 라이브러리 설치 필요
 
-translator = googletrans.Translator() 
+translator = googletrans.Translator() # 번역모듈을 변수에 바인딩
 
+
+# translate 함수 사용
 str1 = "행복하세요" 
 result1 = translator.translate(str1, dest='en', src='auto') 
 print(f"행복하세요 => {result1.text}") 

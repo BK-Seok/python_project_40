@@ -32,8 +32,9 @@ def send_mesaage():
     pyautogui.write(["escape"])
     time.sleep(1.0)
 
+# schedule 모듈을 이용하여 10초당 메세지를 전송을 실행
 schedule.every(10).seconds.do(send_mesaage)
 
 while True:
-    schedule.run_pending()
+    schedule.run_pending()  #무한루프를 돌면서 1초에 한번씩 스케쥴을 지속적으로 체크
     time.sleep(1)

@@ -1,6 +1,7 @@
 import pyautogui
 import time
 import pyperclip
+# pyperclip : 컴퓨터의 클립보드로 텍스트를 보내거나 클립보드에서 텍스트를 가지고 올 수 있도록 하는 모듈
 
 while True:
     print(pyautogui.position())
@@ -28,18 +29,20 @@ while True:
     # pyautogui.mouseUp()
 
     pyperclip.copy("서울 날씨") 
-    pyautogui.hotkey("ctrl", "v")
+    pyautogui.hotkey("ctrl", "v")   # 여러 키를 동시에 입력해야 할 때 hotkey 함수를 쓴다
     time.sleep(0.5)
 
     pyautogui.write(["enter"]) 
     time.sleep(1)
     
-    pyautogui.moveTo(1964,694,0.2)
-    pyautogui.drag(193,0, duration=0.5)
+    pyautogui.moveTo(1964,694,0.2)  # (x, y)좌표로 0.2초동안 움직인다
+    pyautogui.drag(193,0, duration=0.5) # duration = 이동시간
     # pyautogui.dragTo(1964, 694, duration=0.25)
     pyautogui.hotkey('ctrl','c')
     time.sleep(0.1)
     a = pyperclip.paste()
+    # 파이썬에서 copy한 내용을 메모장이나 크롬같은 다른 프로그램에서 붙여넣기 할 수 있고
+    # 반대로 다른 프로그램에서 클립보드에 복사한 내용을 파이썬에서 붙여넣기 할 수 있다.
     
     pyautogui.moveTo(464,1105,0.2)
     pyautogui.click()
@@ -48,4 +51,4 @@ while True:
     pyautogui.hotkey("ctrl", "v")
     time.sleep(0.5)
     break
-#현재 온도24.9°#현재 온도24.9°
+#현재 온도24.9°#현재 온도24.9°#현재 온도21.4°
