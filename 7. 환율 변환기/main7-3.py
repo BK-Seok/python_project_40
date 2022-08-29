@@ -6,7 +6,7 @@ man7-3.py
 """
 import requests         # 파이썬에서 크롤링을 하기 위해 사용되는 내장 라이브러리
 from bs4 import BeautifulSoup
-from pyspark.sql import functions as F
+# from pyspark.sql import functions as F
 
 
 
