@@ -1,8 +1,8 @@
 import smtplib
 from email.mime.text import MIMEText
 
-send_email = "idevbk@naver.com"
-send_pwd = ""
+send_email = "idev0323@naver.com"
+send_pwd = "Qlalf**0323"
 recv_email = "qudrlfbbung@naver.com"
 
 smtp_name = "smtp.naver.com" 
