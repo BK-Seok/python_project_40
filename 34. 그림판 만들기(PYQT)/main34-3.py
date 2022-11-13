@@ -17,11 +17,11 @@ class WindowClass(QMainWindow, form_class) :
         self.brushColor = Qt.white  
 
         self.canvas = QtGui.QPixmap(self.lb_canvas.width(), self.lb_canvas.height()) 
-        self.canvas.fill(QtGui.QColor("black"))  
+        self.canvas.fill(QtGui.QColor("white"))  
         self.lb_canvas.setPixmap(self.canvas)
 
         self.btn_black.clicked.connect(self.btn_clicked) # ????????????????
-        self.btn_black.setStyleSheet('background:white')
+        self.btn_black.setStyleSheet('background:black')
 
         self.btn_red.clicked.connect(self.btn_clicked)
         self.btn_red.setStyleSheet('background:red')

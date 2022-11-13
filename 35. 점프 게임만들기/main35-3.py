@@ -18,8 +18,6 @@ screen = pygame.display.set_mode((MAX_WIDTH,MAX_HEIGHT))
 pygame.display.set_caption("Jump Game")
 # 화면 타이틀 설정
 
-
-
 class Player():
     def __init__(self, x, y):
         self.x = x
